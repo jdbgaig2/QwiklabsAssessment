@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct  5 10:20:45 2022
+
+@author: jbrowning2
+"""
+
+import numpy as np
+import pandas as pd
+
+df=pd.read_csv('BRS June 2022 Vouchers 800548 & 800549.xlsx')
+df=pd.read_excel('C:/Users/jbrowning2/OneDrive - Great American Insurance Group/Desktop/BRS ACH Data/BRS June 2022 Vouchers 800548 & 800549.xlsx')
+df
+list_all_columns=df.columns.to_list()
+df.info()
+df.dtypes
+df.describe()
+#df.hist(bins=5)
+dd=df.head(20)
+df.tail(5)
+df.sample(1000)
